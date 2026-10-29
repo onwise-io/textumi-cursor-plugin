@@ -1,7 +1,7 @@
 {
   "name": "textumi",
   "displayName": "Textumi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Check text for AI-writing signals and rewrite English drafts in a natural human voice, with facts, numbers and links kept. Connects the Textumi MCP server with sign-in.",
   "author": {
     "name": "Textumi",

@@ -29,7 +29,8 @@ Do not send texts to Textumi on your own initiative. Use it only for the text th
 3. Send all answers with `humanize_continue`. If an answer is refused, fix its format as the hint says and send it again.
 4. If the status is `running`, call `humanize_status` with the same `job_id`.
 5. Repeat until the status is `completed` or `failed`.
-6. Give the user the returned text unchanged. Do not edit, shorten or "improve" it.
+6. Do Textumi's final meaning check, which also comes with every finished result (`final_check`): read the result once against the original and repair only meaning the rewrite damaged (who does what, a condition or limit, a time, an amount, permission versus obligation, certainty versus possibility, a negation, a name, a fact lost or added). Use the smallest edit inside the rewritten sentence and keep its new wording. When unsure, leave the text as it is. Never polish, shorten or "improve" anything else.
+7. Give the user the text and list each edit you made in one short line, before and after.
 
 Only one rewrite per account runs at a time. If the user no longer needs one, call `humanize_cancel`. A request counts toward the allowance once its first review tasks are returned, even if it is not finished.
 
