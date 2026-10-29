@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "textumi": {
+      "type": "http",
+      "url": "https://textumi.com/mcp"
+    }
+  }
+}
