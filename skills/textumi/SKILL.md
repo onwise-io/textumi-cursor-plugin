@@ -32,6 +32,8 @@ Do not send texts to Textumi on your own initiative. Use it only for the text th
 6. Do Textumi's final meaning check, which also comes with every finished result (`final_check`): read the result once against the original and repair only meaning the rewrite damaged (who does what, a condition or limit, a time, an amount, permission versus obligation, certainty versus possibility, a negation, a name, a fact lost or added). Use the smallest edit inside the rewritten sentence and keep its new wording. When unsure, leave the text as it is. Never polish, shorten or "improve" anything else.
 7. Give the user the text and list each edit you made in one short line, before and after.
 
+The user's own instructions come first: if the user asks for Textumi's text unchanged, for damage to be only pointed out, or for another way of checking, do as the user asks.
+
 Only one rewrite per account runs at a time. If the user no longer needs one, call `humanize_cancel`. A request counts toward the allowance once its first review tasks are returned, even if it is not finished.
 
 ## When something is refused
